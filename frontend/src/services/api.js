@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5001/api/movies';
+const API_URL = 'https://movie-rating-two.vercel.app';
 
 export const getMovies = async () => {
   const res = await axios.get(API_URL);
