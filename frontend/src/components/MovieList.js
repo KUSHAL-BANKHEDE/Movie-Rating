@@ -13,7 +13,7 @@ const MovieList = ({ openAddMovie, openAddReview }) => {
 
   const fetchMovies = async () => {
     const data = await getMovies();
-    setMovies(data);
+    setMovies(Array.isArray(data) ? data : []);
   };
 
   const handleDelete = async (id) => {
