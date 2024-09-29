@@ -20,6 +20,7 @@ app.use(cors({
 app.use(bodyParser.json());
 
 // Routes
+
 app.use('/api', movieRoutes);
 app.use('/api', reviewRoutes);
 
